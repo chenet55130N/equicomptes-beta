@@ -363,6 +363,7 @@ html[data-theme="studio"] .top{background:linear-gradient(120deg,#1d293e,#334a69
    <form id="beta-login-form" class="beta-login-form" hidden>
      <label for="beta-email">Adresse e-mail du compte de test</label><input id="beta-email" type="email" required autocomplete="username" placeholder="adresse@example.com">
      <label for="beta-password">Mot de passe Firebase</label><input id="beta-password" type="password" required autocomplete="current-password" placeholder="Mot de passe">
+     <label for="beta-foyer">Identifiant privé du foyer de test</label><input id="beta-foyer" type="text" required maxlength="80" pattern="[a-z0-9-]+" spellcheck="false" autocapitalize="none" autocomplete="off" placeholder="Identifiant défini dans les règles Firebase">
      <button class="beta-main-btn" type="submit">Se connecter à la bêta</button>
    </form>
    <div id="beta-gate-actions" class="beta-gate-actions"><button type="button" id="beta-change-config">Modifier la configuration</button><button type="button" id="beta-signout" hidden>Se déconnecter</button></div>

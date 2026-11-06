@@ -1,4 +1,4 @@
-const CACHE='beta-equi-v7-20261106-1';
+const CACHE='beta-equi-v7-20261106-2';
 const FILES=['./','./index.html','./manifest.webmanifest','./service-worker.js','./sync-beta.js','./firebase-config.json','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('beta-equi-v7-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
