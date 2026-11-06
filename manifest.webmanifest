@@ -1,0 +1,23 @@
+{
+  "id": "./?equicomptes-v7-beta",
+  "name": "ÉquiComptes V7 BÊTA",
+  "short_name": "Équi BÊTA",
+  "description": "Deuxième application de test synchronisée sur Firebase. Indépendante de la V6.4.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eff5f8",
+  "theme_color": "#1b5069",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
