@@ -248,6 +248,10 @@ html[data-theme="studio"] .top{background:linear-gradient(120deg,#1d293e,#334a69
 <body>
 <div class="app">
 <header class="top"><div class="brand"><div class="brand-mark" aria-hidden="true" id="brand-mark">⚖</div><div class="brand-identity"><h1>ÉquiComptes <span class="beta-label">V7 BÊTA</span></h1><p>Un partage juste, en un clin d’œil</p></div><button class="theme-launch" type="button" id="open-themes" aria-haspopup="dialog" aria-label="Changer le thème"><span aria-hidden="true">◐</span><span class="theme-launch-text">Thèmes</span><span class="theme-current" id="theme-current">Signature</span></button><button class="settings-launch" id="open-settings" type="button" aria-label="Ouvrir les paramètres" title="Paramètres">⚙</button></div><div class="period-row"><div><div class="eyebrow">Répartition du mois</div><div class="period" id="period-label">—</div></div><label aria-label="Choisir le mois"><input id="month" class="month-input" type="month"></label></div></header>
+<div class="beta-sync-strip" aria-live="polite" role="status">
+  <span id="beta-sync-indicator">● BÊTA : connexion Firebase nécessaire</span>
+  <button type="button" id="beta-account-button" aria-label="Compte et connexion Firebase">Compte Firebase</button>
+</div>
 <nav class="tabs-wrap" aria-label="Navigation"><div class="tabs"><button class="tab" data-tab="calcul" aria-selected="true"><span data-theme-icon="calcul" aria-hidden="true">⌁</span> Calcul</button><button class="tab" data-tab="charges" aria-selected="false"><span data-theme-icon="charges" aria-hidden="true">☷</span> Charges</button><button class="tab" data-tab="historique" aria-selected="false"><span data-theme-icon="historique" aria-hidden="true">▤</span> Historique</button><button class="tab" data-tab="partage" aria-selected="false"><span data-theme-icon="partage" aria-hidden="true">↔</span> Partage</button></div></nav>
 <main class="main">
 <section id="pane-calcul" class="pane active">

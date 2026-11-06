@@ -35,8 +35,8 @@ const json=x=>JSON.stringify(x);
 let auth=null,db=null,ready=false,user=null,allUnsubs=[];
 let shadow=new Map(),pending=new Set(),flushTimer=null,saving=0,queued=false;
 const gate=el('beta-gate'),status=el('beta-sync-indicator'),message=el('beta-gate-message');
-function note(text){message.textContent=text;}
-function statusText(text){status.textContent='● '+text;}
+function note(text){if(message)message.textContent=text;else console.warn("ÉquiComptes : zone de message absente",text);}
+function statusText(text){if(status)status.textContent='● '+text;else console.warn('ÉquiComptes : indicateur absent',text);}
 function locked(){gate.hidden=false;ready=false;}
 function unlocked(){gate.hidden=true;ready=true;}
 function errText(e){const code=String(e?.code||'');
