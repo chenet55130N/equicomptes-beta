@@ -1127,6 +1127,15 @@ applyPeopleLabels();applyTheme();renderCharges();renderIncome();
 })();
 </script>
 
+<script>
+// Afficher un diagnostic clair si le module de connexion est absent ou bloqué.
+setTimeout(()=>{
+ if(!window.EQUI_SYNC_MODULE_LOADED){
+  const e=document.getElementById('beta-gate-message');
+  if(e)e.textContent='Le module de connexion ne s’est pas chargé. Vérifie que sync-beta.js figure bien dans le dépôt GitHub et actualise la page.';
+ }
+},4000);
+</script>
 <script type="module" src="./sync-beta.js"></script>
 <script>if("serviceWorker" in navigator && location.protocol==="https:"){navigator.serviceWorker.register("./service-worker.js",{scope:"./"}).catch(()=>{});}</script>
 </body></html>
